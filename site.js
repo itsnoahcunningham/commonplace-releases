@@ -6,7 +6,7 @@ export const SITE = {
    * The public releases repo ("owner/name"), once it exists (ROADMAP Phase 2). While it's
    * empty, Download says downloads open soon and offers an email instead.
    */
-  releasesRepo: "",
+  releasesRepo: "itsnoahcunningham/commonplace-releases",
   email: "nohacunningham@gmail.com",
 };
 
