@@ -23,7 +23,7 @@ export function platformOf(ua = "", touchPoints = 0) {
 export function downloadLinks(repo) {
   if (!repo) return null;
   const base = `https://github.com/${repo}/releases/latest/download`;
-  return { mac: `${base}/Commonplace-Mac.dmg`, windows: `${base}/Commonplace-Windows-Setup.exe` };
+  return { mac: `${base}/Commonplace-Study-Mac.dmg`, windows: `${base}/Commonplace-Study-Windows-Setup.exe` };
 }
 
 export const NAMES = { mac: "Mac", windows: "Windows" };
