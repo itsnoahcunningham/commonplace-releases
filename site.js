@@ -8,7 +8,18 @@ export const SITE = {
    */
   releasesRepo: "itsnoahcunningham/commonplace-releases",
   email: "nohacunningham@gmail.com",
+  /**
+   * The update-emails list (EMAIL-SETUP.md): Noah's Buttondown username, once he has one.
+   * PLACEHOLDER: while it's empty, the "Get update emails" form stays hidden.
+   */
+  updatesList: "",
 };
+
+/** Where the "Get update emails" form sends its address (Buttondown's embed form), or null. */
+export function updatesFormUrl(username) {
+  if (!username) return null;
+  return `https://buttondown.com/api/emails/embed-subscribe/${encodeURIComponent(username)}`;
+}
 
 /** "mac", "windows", "phone" (iPhone, iPad, Android) or "other". */
 export function platformOf(ua = "", touchPoints = 0) {
@@ -60,6 +71,12 @@ function fill() {
     if (links) el.href = links[which];
     else el.removeAttribute("href");
     if (which === platform) el.closest(".choice")?.classList.add("this-computer");
+  }
+  const updates = updatesFormUrl(SITE.updatesList);
+  for (const form of document.querySelectorAll("form[data-updates]")) {
+    if (!updates) continue;
+    form.action = updates;
+    form.closest("[data-updates-section]")?.removeAttribute("hidden");
   }
   for (const el of document.querySelectorAll("[data-email]")) {
     el.href = `mailto:${SITE.email}${el.dataset.email ? `?subject=${encodeURIComponent(el.dataset.email)}` : ""}`;

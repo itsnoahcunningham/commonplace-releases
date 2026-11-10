@@ -27,13 +27,27 @@
       <h2 style="margin-top: 0">In short</h2>
       <ul>
         <li>Your notes, books, highlights and to-dos stay on your computer, in a folder you choose. They are never sent to us.</li>
-        <li>There's no account, no advertising, no analytics and no tracking, in the app or on this website.</li>
+        <li>You sign in once with Apple, Google or your email, so we know who uses Commonplace Study. Your account holds your email address (and your name, if Apple or Google share it), never your notes.</li>
+        <li>There's no advertising, no analytics and no tracking, in the app or on this website.</li>
         <li>Commonplace Study only goes online for things you turn on or ask for: your calendar, updates, an optional voice, saving a web page, and Claude.</li>
+        <li>If you sign up for update emails, we keep your email address (with Buttondown) only to send them. Every email has a one-click unsubscribe.</li>
       </ul>
     </div>
 
     <h2>Who we are</h2>
-    <p>Commonplace Study is a desktop app for Mac and Windows made by Noah Cunningham ("we", "us"). We don't run any server that receives your notes or your information. Questions about this policy: <a data-email="Commonplace Study privacy" href="#"></a>.</p>
+    <p>Commonplace Study is a desktop app for Mac and Windows made by Noah Cunningham ("we", "us"). We never receive your notes. The only information we keep about you is your account (below). Questions about this policy: <a data-email="Commonplace Study privacy" href="#"></a>.</p>
+
+    <h2 id="account">Your account</h2>
+    <p>The first time you open Commonplace Study, you sign in with Apple, Google, or a code sent to your email. We ask so we know who is using the app, can tell you about important changes, and, later, can offer syncing between your devices. Once you've signed in, Commonplace Study works offline.</p>
+    <ul>
+      <li><b>What we keep:</b> your email address; your name, if you sign in with Apple or Google and they share it (with Apple you can hide your email, and we'll get a private relay address instead); when you created your account and last signed in; and whether you asked for update emails. Nothing about your notes, books, to-dos or calendar.</li>
+      <li><b>Where it's kept:</b> with <a href="https://supabase.com/privacy">Supabase</a>, the service that runs sign-in for us. On your computer, the app keeps your sign-in in its own settings folder, readable only by you.</li>
+      <li><b>Signing in with Apple or Google:</b> you sign in on Apple's or Google's own page; they tell us your email address (and name, if you allow it), never your password.</li>
+      <li><b>Code by email:</b> the code is sent from our address at commonplacestudy.com through Brevo, an email delivery service, which handles your address only to deliver it.</li>
+      <li><b>What it's used for:</b> only to know who uses Commonplace Study and to contact you about the app. It isn't sold, shared or used for advertising.</li>
+      <li><b>Update emails:</b> only if you tick "Email me when there's a new version" (it starts unticked). See <a href="#update-emails">Update emails</a>.</li>
+      <li><b>Deleting it:</b> Settings › You › Delete account deletes your account straight away. Your notes are untouched; they were never in it.</li>
+    </ul>
 
     <h2>Your notes and books</h2>
     <p>Everything you write in Commonplace Study is saved as ordinary files in the notes folder you choose, on your own computer (or in a cloud folder such as iCloud Drive, OneDrive or Dropbox if you choose one; that service's own terms then apply). Books you add are kept there too. Commonplace Study keeps a few settings of its own on your computer and in your notes folder. None of this is sent to us or to anyone else.</p>
@@ -51,12 +65,13 @@
     </ul>
 
     <h3>Google user data</h3>
+    <p>When you add a Google account, Commonplace Study asks Google only for: the list of your calendars (to read, not change), the events on them (to show them, and to add or change events such as your dated to-dos), a calendar of its own for your to-dos if you want one, and your email address. It does not ask to share or delete your calendars.</p>
     <p>Commonplace Study's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. In particular, Google calendar data and your Google email address:</p>
     <ul>
       <li>are used only to show and change your calendar in Commonplace Study on your computer, as described above;</li>
-      <li>are not sent to us, sold, used for advertising, or transferred to anyone;</li>
-      <li>are not used to train AI or machine-learning models;</li>
-      <li>are never read by a person, since they never leave your computer except to go back to Google.</li>
+      <li>are not sent to us, sold, used for advertising, or transferred to anyone, except to your own Claude account when you turn on "Let Claude see my calendar" and ask Claude to use it (see "Claude" below);</li>
+      <li>are not used by us to train AI or machine-learning models;</li>
+      <li>are never read by a person at Commonplace Study, since they never leave your computer except to go back to Google, or to your own Claude account as above.</li>
     </ul>
 
     <h3>Updates</h3>
@@ -70,6 +85,7 @@
 
     <h3>Claude (optional)</h3>
     <p>If you connect Commonplace Study to the Claude app, Claude can read and write in your notes folder when you ask it to, using a connector that runs on your computer. What Claude reads is handled by Anthropic, under <a href="https://www.anthropic.com/legal/privacy">Anthropic's privacy policy</a> and your Claude account's settings. Commonplace Study itself sends nothing to Anthropic, and you can disconnect in Settings › AI at any time.</p>
+    <p><b>Your calendar and Claude:</b> Claude can't see your calendar unless you turn on Settings › AI › "Let Claude see my calendar" (it's off to begin with, and set on each computer). While it's on, Commonplace Study keeps a short list of the next two weeks of events from the calendars you show (title, time, place, the event's description and its note in Commonplace Study) in its settings folder on your computer, and Claude reads it only when you ask for something that needs it, such as planning your day. Claude can't change your calendar through it. Turning it off deletes the list straight away. Whether Anthropic may use your chats to improve its models is your choice in your Claude account's privacy settings.</p>
 
     <h3>Links and files you open</h3>
     <p>Links you click open in your web browser, and files you open (a PDF page, for example) open in their own app.</p>
@@ -77,8 +93,22 @@
     <h2>Send feedback</h2>
     <p>Send feedback starts an email in your own mail app. It includes the version of Commonplace Study, your computer's operating system and how many notes and books are in your folder, never their names or contents. You see the whole email before you send it, and nothing is sent unless you send it. We use what you send only to answer you and improve Commonplace Study.</p>
 
+    <h2>Emails you send us</h2>
+    <p>Mail to an address at commonplacestudy.com (such as hello@commonplacestudy.com) is passed on by Cloudflare, which runs the domain, to Noah's own email inbox at Google (Gmail), where it's kept like any other email. Our replies are sent through Brevo, an email delivery service, which handles the message only to deliver it. We use what you write only to answer you and to improve Commonplace Study, and we'll delete your emails if you ask. See <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's</a>, <a href="https://policies.google.com/privacy">Google's</a> and <a href="https://www.brevo.com/legal/privacypolicy/">Brevo's</a> privacy policies.</p>
+
+    <h2 id="update-emails">Update emails (optional)</h2>
+    <p>If you sign up on this website for update emails (for example, what's new in a version, or notes for the focus group), we keep:</p>
+    <ul>
+      <li><b>What:</b> your email address, the date you signed up, and where you signed up (this website). Nothing else is asked for.</li>
+      <li><b>Where it's kept:</b> with <a href="https://buttondown.com/legal/privacy">Buttondown</a>, the service that sends these emails for us. When you sign up, your address goes straight from your browser to Buttondown, which sees your internet address as with any website.</li>
+      <li><b>What it's used for:</b> only to send these emails. It isn't sold, shared or used for advertising, and isn't added to anything else.</li>
+      <li><b>Confirming:</b> you'll get one email asking you to confirm; nothing more is sent until you do.</li>
+      <li><b>Tracking:</b> open and click tracking is turned off, so we don't see whether you opened an email or which links you clicked.</li>
+      <li><b>Unsubscribing and deleting:</b> every email has an unsubscribe link at the bottom, which takes you off the list straight away. To have your address deleted completely, write to <a data-email="Delete my email address" href="#"></a> and we'll remove it from Buttondown.</li>
+    </ul>
+
     <h2>This website</h2>
-    <p>This website has no cookies, no analytics and no tracking, and its fonts are served from the site itself. The company hosting it keeps the usual technical logs (such as internet addresses) to run and protect the site.</p>
+    <p>This website has no cookies, no analytics and no tracking, and its fonts are served from the site itself. The company hosting it keeps the usual technical logs (such as internet addresses) to run and protect the site. The only thing it sends anywhere is your email address, and only if you sign up for update emails (above).</p>
 
     <h2>Children</h2>
     <p>Commonplace Study is made for adults, especially pastors, and isn't directed at children under 13.</p>

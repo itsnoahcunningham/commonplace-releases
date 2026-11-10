@@ -8,6 +8,7 @@
   <link rel="icon" href="img/icon-128.png">
   <link rel="stylesheet" href="style.css">
   <script type="module" src="site.js"></script>
+  <script type="module" src="demo.js"></script>
 </head>
 <body>
   <header class="site-head">
@@ -24,24 +25,115 @@
       <div class="wrap">
         <img class="mark" src="img/symbol-ivory.png" alt="">
         <h1>Commonplace Study</h1>
-        <p class="kind">The note-taking and productivity app for pastors</p>
-        <p class="tagline">Every note, every task, every text — all connected.</p>
-        <p class="secondary">Search a passage. See everything you've ever read, written, or preached on it.</p>
+        <p class="tagline">Search a passage. See everything you've ever read, written, or preached on it.</p>
+        <p class="secondary">Notes, books, to-dos and calendar for pastors, connected by Scripture.</p>
         <div class="buttons">
           <a class="button" data-main-download href="download.html">Download</a>
           <a class="link" data-other-download href="download.html"></a>
         </div>
-        <img class="shot" src="img/app-home.png" width="1200" height="800" alt="Commonplace Study's Home: today's services, visits and to-dos, and the week ahead.">
+        <!-- The moving demo (demo.js): a small copy of the app's screens, stepped through on a loop. -->
+        <div class="demo" data-demo>
+          <div class="demo-win" role="img" aria-label="Commonplace Study at work: a passage with your sermon, books and notes beside it; a text outlined with brackets and sermon points; a sermon in Preaching mode with a timer.">
+            <div class="demo-bar"><span></span><span></span><span></span><b>Commonplace Study</b></div>
+            <div class="demo-stage">
+
+              <div class="demo-scene on ge1 ge2 ge3 ge4" data-scene="passage" data-step="4">
+                <div class="dp-text">
+                  <small>Romans</small>
+                  <h4>Chapter 8</h4>
+                  <p><sup>28</sup><span class="v28">And we know that all things work together for good to them that love God, to them who are the called according to his purpose.</span> <sup>29</sup>For whom he did foreknow, he also did predestinate to be conformed to the image of his Son, that he might be the firstborn among many brethren. <sup>30</sup>Moreover whom he did predestinate, them he also called: and whom he called, them he also justified: and whom he justified, them he also glorified.</p>
+                </div>
+                <div class="dp-margin">
+                  <div class="mc c1"><small>v. 28 · Your sermon</small><b>More Than Conquerors</b><span>Preached in the Romans series</span></div>
+                  <div class="mc c2 book"><small>v. 28 · From your library</small><b>Two books quote this verse</b><span>Open each at the page</span></div>
+                  <div class="mc c3"><small>vv. 29–30 · Your study note</small><b>The golden chain</b><span>Foreknew, predestined, called, justified, glorified</span></div>
+                </div>
+              </div>
+
+              <div class="demo-scene" data-scene="outline" data-step="0">
+                <div class="ds-heads"><span></span><span>The text · Philippians 4:11–13</span><span class="exe">Exegetical</span><span class="hom">Homiletical</span></div>
+                <div class="ds-grid">
+                  <i class="n" style="grid-row:1">11</i>
+                  <p class="ln" style="grid-row:1">Not that I speak in respect of want:<span class="tail"> for I have learned, in whatsoever state I am, therewith to be content.</span></p>
+                  <p class="ln new" style="grid-row:2">for I have <mark>learned</mark>, in whatsoever state I am, therewith to be <mark>content</mark>.</p>
+                  <i class="n" style="grid-row:3">12</i>
+                  <p class="ln" style="grid-row:3">I know both how to be abased, and I know how to abound:</p>
+                  <p class="ln" style="grid-row:4">every where and in all things I am <mark>instructed</mark> both to be full and to be hungry.</p>
+                  <i class="n" style="grid-row:5">13</i>
+                  <p class="ln" style="grid-row:5">I can do all things through Christ which strengtheneth me.</p>
+                  <div class="br b1" style="grid-row:1 / 3"><span></span><em data-type-at="2" data-text="what he learned">what he learned</em></div>
+                  <div class="br b2" style="grid-row:3 / 5"><span></span><em data-type-at="3" data-text="in every circumstance">in every circumstance</em></div>
+                  <div class="pt p1" style="grid-row:1 / 3"><b>1</b><span>Contentment is learned<small>v. 11</small></span></div>
+                  <div class="pt p2" style="grid-row:3 / 5"><b>2</b><span>In want and in plenty<small>v. 12</small></span></div>
+                  <div class="pt p3" style="grid-row:5"><b>3</b><span>Contentment rests in Christ<small>v. 13</small></span></div>
+                  <div class="ds-note"><b>learned · content · instructed</b>Contentment is something learned, not something natural.</div>
+                </div>
+              </div>
+
+              <div class="demo-scene" data-scene="preach" data-step="0">
+                <div class="dr-bar"><b data-clock>12:05</b><span>17:55 left</span><i class="dr-go">❚❚ Pause</i><em>30 min</em><u class="dr-progress"></u></div>
+                <div class="dr-sheet">
+                  <div class="dr-cols">
+                    <h4>Contentment in Christ</h4>
+                    <p><mark class="g">Big idea: Contentment is learned, and it is learned in Christ.</mark></p>
+                    <p class="lab">Introduction</p>
+                    <p>Most of us think contentment comes when our circumstances change. Paul writes this from prison.</p>
+                    <p class="li">● When were you last <b>truly content</b>?</p>
+                    <p class="li sub">○ And how long did it last?</p>
+                    <p class="lab">Text</p>
+                    <p><mark class="y">[11]</mark> Not that I speak in respect of want: for I have learned, in whatsoever state I am, therewith to be content.</p>
+                    <p><mark class="y">[12]</mark> I know both how to be abased, and I know how to abound.</p>
+                    <p><mark class="y">[13]</mark> I can do all things through Christ which strengtheneth me.</p>
+                    <p class="lab">Body</p>
+                    <p><b>1. Contentment is learned (v. 11)</b></p>
+                    <p class="li">● It did not come naturally, even to an apostle</p>
+                    <p><b>2. In want and in plenty (v. 12)</b></p>
+                    <p class="li">● Paul had been in both</p>
+                    <p class="li sub">○ Abased, and abounding</p>
+                    <p><b>3. Contentment rests in Christ (v. 13)</b></p>
+                    <p class="li">● Not strength for anything I choose</p>
+                    <p class="li">● Strength to be content in what God gives</p>
+                    <p class="lab">Conclusion</p>
+                    <p><b>Christ is enough</b> in the prison and in the palace. Rest in him this week.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- The little window that says, in a line, what the app is doing at each step. -->
+          <p class="demo-say in" data-say aria-live="off">Your sermons, books and notes, beside the passage.</p>
+          <div class="demo-tabs" role="tablist" aria-label="What the demo is showing">
+            <button role="tab" data-tab class="on" aria-selected="true">Everything on a passage</button>
+            <button role="tab" data-tab aria-selected="false">Outline a text</button>
+            <button role="tab" data-tab aria-selected="false">Preach it</button>
+          </div>
+        </div>
+        <noscript><img class="shot" src="img/app-home.png" width="1600" height="1042" alt="Commonplace Study's Home: the sermon you're writing, today's meetings and to-dos, and the days ahead."></noscript>
       </div>
     </section>
 
     <section class="point">
       <div class="wrap">
         <div class="point-text">
-          <h2>Scripture connects everything</h2>
-          <p>Write "Rom 8:28" anywhere and Commonplace Study finds it, links it, and gathers every note, sermon and book that cites it.</p>
+          <h2>Everything on a passage</h2>
+          <p>Open a chapter and your sermons, notes and books on it are there beside the verses.</p>
+          <p>Write "Rom 8:28" anywhere and it's linked.</p>
         </div>
-        <img class="point-shot" src="img/app-note.png" width="1200" height="800" loading="lazy" alt="A sermon note with its Bible references highlighted and linked.">
+        <img class="point-shot" src="img/app-passage.png" width="1600" height="1000" loading="lazy" alt="Romans 8 in the Bible, with a sermon, a study note and two books that cite its verses in the margin beside them.">
+      </div>
+    </section>
+
+    <section class="pulpit">
+      <div class="wrap">
+        <div class="point-text">
+          <h2>From the text to the pulpit</h2>
+          <p>Outline a passage with brackets and sermon points. Turn it into a manuscript. Preach from it with a timer.</p>
+        </div>
+        <div class="pair">
+          <img class="point-shot" src="img/app-outline.png" width="1600" height="1042" loading="lazy" alt="Philippians 4:11–13 broken into lines, with brackets for the structure of the text and sermon points beside them.">
+          <img class="point-shot" src="img/app-preach.png" width="1600" height="1042" loading="lazy" alt="Preaching mode: the sermon in two columns of large type, with a timer counting up at the top.">
+        </div>
       </div>
     </section>
 
@@ -49,9 +141,9 @@
       <div class="wrap">
         <div class="point-text">
           <h2>Your books, searchable</h2>
-          <p>Read your PDFs and EPUBs, highlight, listen, and find every verse a book quotes.</p>
+          <p>Read your PDFs and EPUBs. Every verse a book quotes is found and linked.</p>
         </div>
-        <img class="point-shot" src="img/app-book.png" width="1200" height="800" loading="lazy" alt="Baxter's The Reformed Pastor open in the Library, its Bible references found and linked.">
+        <img class="point-shot" src="img/app-book.png" width="1600" height="1042" loading="lazy" alt="Bunyan's The Pilgrim's Progress open in the Library, its Bible references found and linked.">
       </div>
     </section>
 
@@ -61,7 +153,7 @@
           <h2>Your week in one place</h2>
           <p>Notes, to-dos and your calendar side by side: Google, Outlook or iCloud.</p>
         </div>
-        <img class="point-shot" src="img/app-calendar.png" width="1200" height="800" loading="lazy" alt="The month: services, meetings, visits and to-dos with their deadlines.">
+        <img class="point-shot" src="img/app-calendar.png" width="1600" height="1042" loading="lazy" alt="The week: services, meetings, visits and to-dos with their deadlines.">
       </div>
     </section>
 
@@ -71,10 +163,11 @@
           <h2>Your notes are yours</h2>
           <p>Every note is a plain <b>.md</b> file in a folder you choose. Open it in any app, today or in twenty years.</p>
           <ul class="facts">
-            <li>No account</li>
+            <li>Your notes stay on your computer</li>
             <li>Works offline</li>
             <li>Nothing sent to us</li>
           </ul>
+          <p class="ai-line">Use Claude? Commonplace Study works with your own, so it can search your notes and books when you ask. It's off until you set it up.</p>
         </div>
         <div class="files" aria-label="Your notes folder: plain Markdown files">
           <div class="files-bar"><span></span><span></span><span></span><b>Commonplace Study</b></div>
@@ -102,11 +195,28 @@ status: draft
 
     <section class="cta">
       <div class="wrap">
-        <h2>Try Commonplace Study</h2>
+        <h2>Every note, every task, every text — all connected.</h2>
         <p class="muted">For Mac and Windows. Free while it's in testing.</p>
         <div class="buttons">
           <a class="button" data-main-download href="download.html">Download</a>
         </div>
+        <p class="maker">Made by a pastor-in-training, for pastors. It's still in testing: <a data-email="Commonplace Study" href="#">tell me what's missing</a>.</p>
+      </div>
+    </section>
+
+    <!-- Get update emails (EMAIL-SETUP.md). Hidden until SITE.updatesList in site.js has Noah's
+         Buttondown username (PLACEHOLDER); site.js then sets the form's address and shows it. -->
+    <section class="updates" data-updates-section hidden>
+      <div class="narrow">
+        <h2>Get update emails</h2>
+        <p class="muted">A short note when there's something new in Commonplace Study. No more than that; unsubscribe with one click.</p>
+        <form class="signup" data-updates method="post" action="#BUTTONDOWN-FORM-URL-PLACEHOLDER">
+          <label class="sr-only" for="updates-email">Your email address</label>
+          <input id="updates-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+          <input type="hidden" name="tag" value="website">
+          <button class="button" type="submit">Sign up</button>
+        </form>
+        <p class="small muted">You'll get one email to confirm. Your address is kept by Buttondown, only for these emails; see the <a href="privacy.html#update-emails">privacy policy</a>.</p>
       </div>
     </section>
   </main>
