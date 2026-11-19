@@ -7,7 +7,7 @@ export const SITE = {
    * empty, Download says downloads open soon and offers an email instead.
    */
   releasesRepo: "itsnoahcunningham/commonplace-releases",
-  email: "nohacunningham@gmail.com",
+  email: "hello@commonplacestudy.com",
   /**
    * The update-emails list (EMAIL-SETUP.md): Noah's Buttondown username, once he has one.
    * PLACEHOLDER: while it's empty, the "Get update emails" form stays hidden.
